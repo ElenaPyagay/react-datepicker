@@ -1,5 +1,5 @@
-@import "variables.scss";
-@import "mixins.scss";
+@import "variables";
+@import "mixins";
 
 .react-datepicker-wrapper {
   display: inline-block;
@@ -546,3 +546,27 @@
     }
   }
 }
+.react-datepicker-wrapper input{
+  outline: none;
+  border: 1px solid #D2D2D2;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  height: 36px;
+  padding: 0 10px;
+  vertical-align: -webkit-baseline-middle;
+  -webkit-appearance: none;
+
+}
+@media (max-width: 759px) {
+  .react-datepicker-wrapper input{
+    width: 100%;
+    height: 42px;
+    display: block;
+    padding: 10px;
+    -webkit-appearance: none;
+  }
+}
+
+
